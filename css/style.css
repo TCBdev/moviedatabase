@@ -1,15 +1,19 @@
-#movies img,
-#movie img {
+.card-body {
     padding: 5%;
-    width: 80%;
+}
+
+.card img {
+    cursor: pointer;
 }
 
 @media(min-width: 960px) {
-    #movies .col-md-3 .well {
-        height: 100vh;
+    #movies .col-md-3 .card {
+        height: 100%;
+
     }
 
     #movies .col-md-3 img {
         padding: 5%;
+        width: 100%;
     }
 }

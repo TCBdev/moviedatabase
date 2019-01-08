@@ -15,10 +15,17 @@ function getMovies(searchText) {
             $.each(movies, (index, movie) => {
                 output += `
           <div class="col-md-3">
-            <div class="well text-center">
-              <img src="${movie.Poster}">
+            <div class="card card-body text-center">
+        
+              <img src="${movie.Poster}" onclick="movieSelected('${movie.imdbID}')" href="#">
+        
+              <div>
+              <br>
               <h5>${movie.Title}</h5>
+              
+              <br>
               <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
+              </div>
             </div>
           </div>
         `;
