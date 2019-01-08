@@ -1,0 +1,15 @@
+#movies img,
+#movie img {
+    padding: 5%;
+    width: 80%;
+}
+
+@media(min-width: 960px) {
+    #movies .col-md-3 .well {
+        height: 100vh;
+    }
+
+    #movies .col-md-3 img {
+        padding: 5%;
+    }
+}
